@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+section {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAV */
+#navbar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: black;
+  color: white;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+#navbar li {
+  display: inline-block;
+  margin-right: 50px;
+  font-size: 2rem;
+}
+
+/* WELCOME */
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 3rem;
+}
+
+/* PROJECTS */
+.projects-section {
+  text-align: center;
+  height: 100vh;
+  padding: 10rem 2rem;
+}
+
+.projects-section-header {
+  max-width: 700px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem black solid;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.btn-show-all {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 5px;
+  background: black;
+  color: white;
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: red;
+}
+
+/* CONTACT */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.4rem;
+  transition: transform 0.3s ease-out;
+  padding: 1rem 2rem;
+}
+
+.contact-details:hover {
+  transform: scale(1.1);
+}
+
+.contact-details i {
+  margin-right: 10px;
+}
+
+/* FOOTER */
+footer {
+  font-weight: 200;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border-top: 2px black solid;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+footer i {
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+/* SCREEN SIZE */
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #navbar ul {
+    flex-direction: column;
+  }
+
+  #navbar li {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .contact-links {
+    margin-top: 2rem;
+  }
+
+  .contact-details {
+    font-size: 2rem;
+  }
+}
